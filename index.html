@@ -9,16 +9,19 @@
 
   	<br> </br>
 
-    Our small WaveFlow has 5.91M parameters (i.e. 64 residual channels), and it can synthesize 22.05kHz high-fidelity raw audio 42.6&times; faster than real-time on a GPU.&nbsp; In contrast, WaveGlow requires 87.8M parameters (i.e. 256 residual channels) for generating high-fidelity audio, and its performance degrades quickly with small residual channels.&nbsp;  We also present audio samples from Gaussian autoregressive WaveNet and ClariNet.
+    Our small WaveFlow has 5.91M parameters (i.e. 64 residual channels), and it can synthesize 22.05 kHz high-fidelity raw audio 42.6&times; faster than real-time on a GPU.&nbsp; In contrast, WaveGlow requires 87.8M parameters (i.e. 256 residual channels) for generating high-fidelity audio, and its performance degrades quickly with small residual channels.&nbsp;  We also present audio samples from Gaussian autoregressive WaveNet and ClariNet.
     <h3> </h3>
 
+
+    <div>
+      <h3> Audio synthesis conditioned on mel spectrogram</h3>
 
     <table>
       <thead>
         <tr>
 		<th align="left">&nbsp;WaveFlow (64-layer,&nbsp;&nbsp;res. channels = 256)&nbsp;&nbsp;&nbsp;&nbsp;</th>
 		<th align="left">&nbsp;WaveGlow (96-layer,&nbsp;&nbsp;res. channels = 256)&nbsp;&nbsp;&nbsp;&nbsp;</th>
-    <th align="left">&nbsp;Gaussian WaveNet (30-layer,&nbsp;&nbsp;res. channels = 128)&nbsp;&nbsp;&nbsp;&nbsp;</th>
+    <th align="left">&nbsp;Ground-truth (recorded speech)&nbsp;&nbsp;&nbsp;&nbsp;</th>
 		</tr>
       </thead>
 
@@ -29,7 +32,7 @@
  -->        <tr>
           <td><audio controls=""><source src="samples/waveflow_r256/LJ001-0001_synthesis.wav" type="audio/wav"></audio></td>
           <td><audio controls=""><source src="samples/waveglow_r256/LJ001-0001_synthesis.wav" type="audio/wav"></audio></td>
-          <td><audio controls=""><source src="samples/wavenet/LJ001-0001_synthesis.wav" type="audio/wav"></audio></td>
+          <td><audio controls=""><source src="samples/ground-truth/LJ001-0001.wav" type="audio/wav"></audio></td>
         </tr>
 
 <!--         <tr>
@@ -38,7 +41,7 @@
  -->        <tr>
           <td><audio controls=""><source src="samples/waveflow_r256/LJ001-0003_synthesis.wav" type="audio/wav"></audio></td>
           <td><audio controls=""><source src="samples/waveglow_r256/LJ001-0003_synthesis.wav" type="audio/wav"></audio></td>
-          <td><audio controls=""><source src="samples/wavenet/LJ001-0003_synthesis.wav" type="audio/wav"></audio></td>
+          <td><audio controls=""><source src="samples/ground-truth/LJ001-0003.wav" type="audio/wav"></audio></td>
         </tr>
 
 <!--         <tr>
@@ -47,7 +50,7 @@
  -->          <tr>
           <td><audio controls=""><source src="samples/waveflow_r256/LJ001-0005_synthesis.wav" type="audio/wav"></audio></td>
           <td><audio controls=""><source src="samples/waveglow_r256/LJ001-0005_synthesis.wav" type="audio/wav"></audio></td>
-          <td><audio controls=""><source src="samples/wavenet/LJ001-0005_synthesis.wav" type="audio/wav"></audio></td>
+          <td><audio controls=""><source src="samples/ground-truth/LJ001-0005.wav" type="audio/wav"></audio></td>
         </tr>
 
 <!--        <tr>
@@ -56,7 +59,7 @@
  -->          <tr>
           <td><audio controls=""><source src="samples/waveflow_r256/LJ001-0015_synthesis.wav" type="audio/wav"></audio></td>
           <td><audio controls=""><source src="samples/waveglow_r256/LJ001-0015_synthesis.wav" type="audio/wav"></audio></td>
-          <td><audio controls=""><source src="samples/wavenet/LJ001-0015_synthesis.wav" type="audio/wav"></audio></td>
+          <td><audio controls=""><source src="samples/ground-truth/LJ001-0015.wav" type="audio/wav"></audio></td>
         </tr>
 
 
@@ -66,7 +69,7 @@
  -->          <tr>
           <td><audio controls=""><source src="samples/waveflow_r256/LJ001-0016_synthesis.wav" type="audio/wav"></audio></td>
           <td><audio controls=""><source src="samples/waveglow_r256/LJ001-0016_synthesis.wav" type="audio/wav"></audio></td>
-          <td><audio controls=""><source src="samples/wavenet/LJ001-0016_synthesis.wav" type="audio/wav"></audio></td>
+          <td><audio controls=""><source src="samples/ground-truth/LJ001-0016.wav" type="audio/wav"></audio></td>
         </tr>
 
       </tbody>
@@ -79,6 +82,7 @@
         <tr>
 		<th align="left">WaveFlow (64-layer,&nbsp;&nbsp;res. channels = 128)&nbsp;&nbsp;&nbsp;&nbsp;</th>
     <th align="left">WaveGlow (96-layer,&nbsp;&nbsp;res. channels = 128)&nbsp;&nbsp;&nbsp;&nbsp;</th>
+    <th align="left">&nbsp;WaveNet (30-layer,&nbsp;&nbsp;res. channels = 128)&nbsp;&nbsp;&nbsp;&nbsp;</th>
         </tr>
       </thead>
 
@@ -86,27 +90,32 @@
         <tr>
           <td><audio controls=""><source src="samples/waveflow_r128/LJ001-0001_synthesis.wav" type="audio/wav"></audio></td>
           <td><audio controls=""><source src="samples/waveglow_r128/LJ001-0001_synthesis.wav" type="audio/wav"></audio></td>
+          <td><audio controls=""><source src="samples/wavenet/LJ001-0001_synthesis.wav" type="audio/wav"></audio></td>
         </tr>
 
         <tr>
           <td><audio controls=""><source src="samples/waveflow_r128/LJ001-0003_synthesis.wav" type="audio/wav"></audio></td>
           <td><audio controls=""><source src="samples/waveglow_r128/LJ001-0003_synthesis.wav" type="audio/wav"></audio></td>
+          <td><audio controls=""><source src="samples/wavenet/LJ001-0003_synthesis.wav" type="audio/wav"></audio></td>
         </tr>
 
         <tr>
           <td><audio controls=""><source src="samples/waveflow_r128/LJ001-0005_synthesis.wav" type="audio/wav"></audio></td>
           <td><audio controls=""><source src="samples/waveglow_r128/LJ001-0005_synthesis.wav" type="audio/wav"></audio></td>
+          <td><audio controls=""><source src="samples/wavenet/LJ001-0005_synthesis.wav" type="audio/wav"></audio></td>
         </tr>
 
         <tr>
           <td><audio controls=""><source src="samples/waveflow_r128/LJ001-0015_synthesis.wav" type="audio/wav"></audio></td>
           <td><audio controls=""><source src="samples/waveglow_r128/LJ001-0015_synthesis.wav" type="audio/wav"></audio></td>
+          <td><audio controls=""><source src="samples/wavenet/LJ001-0015_synthesis.wav" type="audio/wav"></audio></td>
         </tr>
 
 
         <tr>
           <td><audio controls=""><source src="samples/waveflow_r128/LJ001-0016_synthesis.wav" type="audio/wav"></audio></td>
           <td><audio controls=""><source src="samples/waveglow_r128/LJ001-0016_synthesis.wav" type="audio/wav"></audio></td>
+          <td><audio controls=""><source src="samples/wavenet/LJ001-0016_synthesis.wav" type="audio/wav"></audio></td>
         </tr>
 
       </tbody>
@@ -158,6 +167,56 @@
       </tbody>
     </table>
 
+
+    <br> </br>
+    <div>
+    <h3> Text-to-speech synthesis</h3>
+     The rainbow passage: When the sunlight strikes raindrops in the air, they act as a prism and form a rainbow. The rainbow is a division of white light into many beautiful colors. These take the shape of a long round arch, with its path high above, and its two ends apparently beyond the horizon. There is, according to legend, a boiling pot of gold at one end. People look, but no one ever finds it. 
+    <h3> </h3>
+
+    <table>
+      <thead>
+        <tr>
+          <th align="left">&nbsp;Deep Voice 3 + WaveFlow &nbsp;&nbsp;&nbsp;&nbsp;</th>
+          <th align="left">&nbsp;Deep Voice 3 + WaveGlow&nbsp;&nbsp;&nbsp;&nbsp;</th>
+          <th align="left">&nbsp;Deep Voice 3 + WaveNet&nbsp;&nbsp;&nbsp;&nbsp;</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td><audio controls=""><source src="samples/dv3_waveflow/u5.wav" type="audio/wav"></audio></td>
+          <td><audio controls=""><source src="samples/dv3_waveglow/u5.wav" type="audio/wav"></audio></td>
+          <td><audio controls=""><source src="samples/dv3_wavenet/u5.wav" type="audio/wav"></audio></td>
+        </tr>
+
+        <tr>
+          <td><audio controls=""><source src="samples/dv3_waveflow/u6.wav" type="audio/wav"></audio></td>
+          <td><audio controls=""><source src="samples/dv3_waveglow/u6.wav" type="audio/wav"></audio></td>
+          <td><audio controls=""><source src="samples/dv3_wavenet/u6.wav" type="audio/wav"></audio></td>
+        </tr>
+
+        <tr>
+          <td><audio controls=""><source src="samples/dv3_waveflow/u7.wav" type="audio/wav"></audio></td>
+          <td><audio controls=""><source src="samples/dv3_waveglow/u7.wav" type="audio/wav"></audio></td>
+          <td><audio controls=""><source src="samples/dv3_wavenet/u7.wav" type="audio/wav"></audio></td>
+        </tr>
+
+        <tr>
+          <td><audio controls=""><source src="samples/dv3_waveflow/u8.wav" type="audio/wav"></audio></td>
+          <td><audio controls=""><source src="samples/dv3_waveglow/u8.wav" type="audio/wav"></audio></td>
+          <td><audio controls=""><source src="samples/dv3_wavenet/u8.wav" type="audio/wav"></audio></td>
+        </tr>
+
+        <tr>
+          <td><audio controls=""><source src="samples/dv3_waveflow/u9.wav" type="audio/wav"></audio></td>
+          <td><audio controls=""><source src="samples/dv3_waveglow/u9.wav" type="audio/wav"></audio></td>
+          <td><audio controls=""><source src="samples/dv3_wavenet/u9.wav" type="audio/wav"></audio></td>
+        </tr>
+
+
+      </tbody>
+    </table>
 
 
 
