@@ -19,7 +19,100 @@
 
     <div>
       <h3> Audio synthesis conditioned on mel spectrogram</h3>
+	    
+    <table>
+      <thead>
+        <tr>
+    	<th align="left">WaveFlow (64-layer,&nbsp;&nbsp;res. channels = 64)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+    	<th align="left">WaveGlow (96-layer,&nbsp;&nbsp;res. channels = 64)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+    	<th align="left">ClariNet (60-layer,&nbsp;&nbsp;res. channels = 64)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+        </tr>
+      </thead>
 
+       <tbody>
+        <tr>
+          <td><audio controls=""><source src="samples/waveflow_r64/LJ001-0001_synthesis.wav" type="audio/wav"></audio></td>
+          <td><audio controls=""><source src="samples/waveglow_r64/LJ001-0001_synthesis.wav" type="audio/wav"></audio></td>
+          <td><audio controls=""><source src="samples/clarinet_r64/LJ001-0001_synthesis.wav" type="audio/wav"></audio></td>
+        </tr>
+
+        <tr>
+          <td><audio controls=""><source src="samples/waveflow_r64/LJ001-0003_synthesis.wav" type="audio/wav"></audio></td>
+          <td><audio controls=""><source src="samples/waveglow_r64/LJ001-0003_synthesis.wav" type="audio/wav"></audio></td>
+          <td><audio controls=""><source src="samples/clarinet_r64/LJ001-0003_synthesis.wav" type="audio/wav"></audio></td>
+        </tr>
+
+        <tr>
+          <td><audio controls=""><source src="samples/waveflow_r64/LJ001-0005_synthesis.wav" type="audio/wav"></audio></td>
+          <td><audio controls=""><source src="samples/waveglow_r64/LJ001-0005_synthesis.wav" type="audio/wav"></audio></td>
+          <td><audio controls=""><source src="samples/clarinet_r64/LJ001-0005_synthesis.wav" type="audio/wav"></audio></td>
+        </tr>
+
+        <tr>
+          <td><audio controls=""><source src="samples/waveflow_r64/LJ001-0015_synthesis.wav" type="audio/wav"></audio></td>
+          <td><audio controls=""><source src="samples/waveglow_r64/LJ001-0015_synthesis.wav" type="audio/wav"></audio></td>
+          <td><audio controls=""><source src="samples/clarinet_r64/LJ001-0015_synthesis.wav" type="audio/wav"></audio></td>
+        </tr>
+
+
+        <tr>
+          <td><audio controls=""><source src="samples/waveflow_r64/LJ001-0016_synthesis.wav" type="audio/wav"></audio></td>
+          <td><audio controls=""><source src="samples/waveglow_r64/LJ001-0016_synthesis.wav" type="audio/wav"></audio></td>
+          <td><audio controls=""><source src="samples/clarinet_r64/LJ001-0016_synthesis.wav" type="audio/wav"></audio></td>
+        </tr>
+
+      </tbody>
+    </table>
+
+
+  	<br> </br>
+    <table>
+      <thead>
+        <tr>
+	<th align="left">WaveFlow (64-layer,&nbsp;&nbsp;res. channels = 128)&nbsp;&nbsp;&nbsp;&nbsp;</th>
+    	<th align="left">WaveGlow (96-layer,&nbsp;&nbsp;res. channels = 128)&nbsp;&nbsp;&nbsp;&nbsp;</th>
+    	<th align="left">&nbsp;WaveNet (30-layer,&nbsp;&nbsp;res. channels = 128)&nbsp;&nbsp;&nbsp;&nbsp;</th>
+        </tr>
+      </thead>
+
+       <tbody>
+        <tr>
+          <td><audio controls=""><source src="samples/waveflow_r128/LJ001-0001_synthesis.wav" type="audio/wav"></audio></td>
+          <td><audio controls=""><source src="samples/waveglow_r128/LJ001-0001_synthesis.wav" type="audio/wav"></audio></td>
+          <td><audio controls=""><source src="samples/wavenet/LJ001-0001_synthesis.wav" type="audio/wav"></audio></td>
+        </tr>
+
+        <tr>
+          <td><audio controls=""><source src="samples/waveflow_r128/LJ001-0003_synthesis.wav" type="audio/wav"></audio></td>
+          <td><audio controls=""><source src="samples/waveglow_r128/LJ001-0003_synthesis.wav" type="audio/wav"></audio></td>
+          <td><audio controls=""><source src="samples/wavenet/LJ001-0003_synthesis.wav" type="audio/wav"></audio></td>
+        </tr>
+
+        <tr>
+          <td><audio controls=""><source src="samples/waveflow_r128/LJ001-0005_synthesis.wav" type="audio/wav"></audio></td>
+          <td><audio controls=""><source src="samples/waveglow_r128/LJ001-0005_synthesis.wav" type="audio/wav"></audio></td>
+          <td><audio controls=""><source src="samples/wavenet/LJ001-0005_synthesis.wav" type="audio/wav"></audio></td>
+        </tr>
+
+        <tr>
+          <td><audio controls=""><source src="samples/waveflow_r128/LJ001-0015_synthesis.wav" type="audio/wav"></audio></td>
+          <td><audio controls=""><source src="samples/waveglow_r128/LJ001-0015_synthesis.wav" type="audio/wav"></audio></td>
+          <td><audio controls=""><source src="samples/wavenet/LJ001-0015_synthesis.wav" type="audio/wav"></audio></td>
+        </tr>
+
+
+        <tr>
+          <td><audio controls=""><source src="samples/waveflow_r128/LJ001-0016_synthesis.wav" type="audio/wav"></audio></td>
+          <td><audio controls=""><source src="samples/waveglow_r128/LJ001-0016_synthesis.wav" type="audio/wav"></audio></td>
+          <td><audio controls=""><source src="samples/wavenet/LJ001-0016_synthesis.wav" type="audio/wav"></audio></td>
+        </tr>
+
+      </tbody>
+    </table>
+
+	    
+	    	    
+	<br> </br>
     <table>
       <thead>
         <tr>
@@ -78,99 +171,7 @@
 
       </tbody>
     </table>
-
-
-  	<br> </br>
-    <table>
-      <thead>
-        <tr>
-		<th align="left">WaveFlow (64-layer,&nbsp;&nbsp;res. channels = 128)&nbsp;&nbsp;&nbsp;&nbsp;</th>
-    <th align="left">WaveGlow (96-layer,&nbsp;&nbsp;res. channels = 128)&nbsp;&nbsp;&nbsp;&nbsp;</th>
-    <th align="left">&nbsp;WaveNet (30-layer,&nbsp;&nbsp;res. channels = 128)&nbsp;&nbsp;&nbsp;&nbsp;</th>
-        </tr>
-      </thead>
-
-       <tbody>
-        <tr>
-          <td><audio controls=""><source src="samples/waveflow_r128/LJ001-0001_synthesis.wav" type="audio/wav"></audio></td>
-          <td><audio controls=""><source src="samples/waveglow_r128/LJ001-0001_synthesis.wav" type="audio/wav"></audio></td>
-          <td><audio controls=""><source src="samples/wavenet/LJ001-0001_synthesis.wav" type="audio/wav"></audio></td>
-        </tr>
-
-        <tr>
-          <td><audio controls=""><source src="samples/waveflow_r128/LJ001-0003_synthesis.wav" type="audio/wav"></audio></td>
-          <td><audio controls=""><source src="samples/waveglow_r128/LJ001-0003_synthesis.wav" type="audio/wav"></audio></td>
-          <td><audio controls=""><source src="samples/wavenet/LJ001-0003_synthesis.wav" type="audio/wav"></audio></td>
-        </tr>
-
-        <tr>
-          <td><audio controls=""><source src="samples/waveflow_r128/LJ001-0005_synthesis.wav" type="audio/wav"></audio></td>
-          <td><audio controls=""><source src="samples/waveglow_r128/LJ001-0005_synthesis.wav" type="audio/wav"></audio></td>
-          <td><audio controls=""><source src="samples/wavenet/LJ001-0005_synthesis.wav" type="audio/wav"></audio></td>
-        </tr>
-
-        <tr>
-          <td><audio controls=""><source src="samples/waveflow_r128/LJ001-0015_synthesis.wav" type="audio/wav"></audio></td>
-          <td><audio controls=""><source src="samples/waveglow_r128/LJ001-0015_synthesis.wav" type="audio/wav"></audio></td>
-          <td><audio controls=""><source src="samples/wavenet/LJ001-0015_synthesis.wav" type="audio/wav"></audio></td>
-        </tr>
-
-
-        <tr>
-          <td><audio controls=""><source src="samples/waveflow_r128/LJ001-0016_synthesis.wav" type="audio/wav"></audio></td>
-          <td><audio controls=""><source src="samples/waveglow_r128/LJ001-0016_synthesis.wav" type="audio/wav"></audio></td>
-          <td><audio controls=""><source src="samples/wavenet/LJ001-0016_synthesis.wav" type="audio/wav"></audio></td>
-        </tr>
-
-      </tbody>
-    </table>
-
-
-  	<br> </br>
-    <table>
-      <thead>
-        <tr>
-		<th align="left">WaveFlow (64-layer,&nbsp;&nbsp;res. channels = 64)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
-    <th align="left">WaveGlow (96-layer,&nbsp;&nbsp;res. channels = 64)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
-    <th align="left">ClariNet (60-layer,&nbsp;&nbsp;res. channels = 64)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
-        </tr>
-      </thead>
-
-       <tbody>
-        <tr>
-          <td><audio controls=""><source src="samples/waveflow_r64/LJ001-0001_synthesis.wav" type="audio/wav"></audio></td>
-          <td><audio controls=""><source src="samples/waveglow_r64/LJ001-0001_synthesis.wav" type="audio/wav"></audio></td>
-          <td><audio controls=""><source src="samples/clarinet_r64/LJ001-0001_synthesis.wav" type="audio/wav"></audio></td>
-        </tr>
-
-        <tr>
-          <td><audio controls=""><source src="samples/waveflow_r64/LJ001-0003_synthesis.wav" type="audio/wav"></audio></td>
-          <td><audio controls=""><source src="samples/waveglow_r64/LJ001-0003_synthesis.wav" type="audio/wav"></audio></td>
-          <td><audio controls=""><source src="samples/clarinet_r64/LJ001-0003_synthesis.wav" type="audio/wav"></audio></td>
-        </tr>
-
-        <tr>
-          <td><audio controls=""><source src="samples/waveflow_r64/LJ001-0005_synthesis.wav" type="audio/wav"></audio></td>
-          <td><audio controls=""><source src="samples/waveglow_r64/LJ001-0005_synthesis.wav" type="audio/wav"></audio></td>
-          <td><audio controls=""><source src="samples/clarinet_r64/LJ001-0005_synthesis.wav" type="audio/wav"></audio></td>
-        </tr>
-
-        <tr>
-          <td><audio controls=""><source src="samples/waveflow_r64/LJ001-0015_synthesis.wav" type="audio/wav"></audio></td>
-          <td><audio controls=""><source src="samples/waveglow_r64/LJ001-0015_synthesis.wav" type="audio/wav"></audio></td>
-          <td><audio controls=""><source src="samples/clarinet_r64/LJ001-0015_synthesis.wav" type="audio/wav"></audio></td>
-        </tr>
-
-
-        <tr>
-          <td><audio controls=""><source src="samples/waveflow_r64/LJ001-0016_synthesis.wav" type="audio/wav"></audio></td>
-          <td><audio controls=""><source src="samples/waveglow_r64/LJ001-0016_synthesis.wav" type="audio/wav"></audio></td>
-          <td><audio controls=""><source src="samples/clarinet_r64/LJ001-0016_synthesis.wav" type="audio/wav"></audio></td>
-        </tr>
-
-      </tbody>
-    </table>
-
+	    
 
     <br> </br>
     <div>
